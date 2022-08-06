@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <script>
+        function navigate(){
+            num = document.getElementById("rollno").value;
+            if(num == 612101264){
+                console.log("validated");
+            window.location.href = "resultPage.html";
+            }
+            else{
+                console.log("not");
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <Table Width=400 border=0>
+            <tr>
+                <td width=60 align='left'>
+                    <img src=unom.png width=70 height=65>
+                </td>
+                <td width=500 align='left'>
+                    <span class='TdsTxt' style='color:#FFFFFF'>
+                        <b>
+                            <font color='brown' size=6>
+                                University of Madras
+                                <br>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <center>
+        <!-- publish -->
+        <Table Width=600 border=0>
+            <tr>
+                <td align='center'>
+                    <span class='TdsTxt' style='color:#FFFFFF'>
+                        <font color='blue' size=4>Result of May-2022 Examination.  Published on 25th August-2022
+                    </span>
+                </td>
+            </tr>
+        </table>
+
+        <form name="master" method=post action ="resultPage.html">
+
+            <font color="blue" size=6>
+            
+            <Table Width='400' class="bordered">
+            
+            <tr style="height=21px;"  style="width=300px;" >
+            <td class=nartext> <b>Register Number</B></td>
+            <td class=nartext><input id="rollno" name= "regno"  class=narText style="width=150px;" style="height=21px;" ></td></tr><tr>
+            <!--<td class=nartext> <b>Date of Birth</B></td>
+            '<td class=nartext><input name= "pwd"   class=narText style="width=150px;" style="height=21px;" >(DD/MM/YYYY)</td>-->
+            
+            </tr>
+            
+            <tr style="height=17px;"  style="width=300px;"  >
+            <td colspan=2 align="center" class=nartext> <b><input type='button' value='Get Result' onclick="navigate()"></B>&nbsp;&nbsp; <b><input type="Reset" value="Clear" width=300></td>
+            
+            </TABLE>
+            
+            
+            <BR>
+            </FORM>
+            
+            
+    </center>
+</body>
+</html>
